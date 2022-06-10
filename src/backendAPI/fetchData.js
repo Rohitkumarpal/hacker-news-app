@@ -1,5 +1,5 @@
 import { useState, useEffect } from "react";
-import { getStories } from "./getdata";
+import { getStories } from "./callApiUrl";
 
 const DatafromApi = (type) => {
   const [stories, setStories] = useState([]);
