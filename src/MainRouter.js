@@ -44,13 +44,13 @@ export default function AppRouter() {
       <Header navItems={navItems} />
         <Switch>
           <Route path="/" render={() => <Redirect to="/top" />} exact={true} />
-          <Route path="/guidelines" exact={true} />
-          <Route path="/faq" exact={true} />
-          <Route path="/list" exact={true} />
-          <Route path="/api" exact={true} />
-          <Route path="/legal" exact={true} />
-          <Route path="/apply_to_yc" exact={true} />
-          <Route path="/contact" exact={true} />
+          <Route path="/guidelines" exact={true} > </Route>
+          <Route path="/faq" exact={true}> </Route>
+          <Route path="/list" exact={true} > </Route>
+          <Route path="/api" exact={true} > </Route>
+          <Route path="/legal" exact={true} > </Route>
+          <Route path="/apply_to_yc" exact={true} > </Route>
+          <Route path="/contact" exact={true} > </Route>
           <Route
             path="/:type"
             render={({ match }) => {
