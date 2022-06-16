@@ -1,5 +1,5 @@
 import React from "react";
-import "./story.css";
+import "./style.css";
 
 const Story = (props) => {
   const { contentId, story } = props;
