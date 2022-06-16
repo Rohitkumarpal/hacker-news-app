@@ -1,5 +1,4 @@
 import PropTypes from "prop-types";
-import classNames from "classnames";
 import "./style.css";
 
 export const InputType = {
@@ -9,11 +8,6 @@ export const InputType = {
   NUMBER: "number"
 };
 const Input = ({type, id, name, value, placeholder, isRequired, onChange, className, ...props}) => {
-
-  const myClass = classNames('input', {
-    [className]: className
-  });
-  
   return (
     <input
       type={type}
@@ -22,7 +16,7 @@ const Input = ({type, id, name, value, placeholder, isRequired, onChange, classN
       value={value}
       placeholder={placeholder}
       required={isRequired}
-      className={myClass}
+      className="input"
       onChange={onChange}
       {...props}
     />
